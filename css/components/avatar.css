@@ -1,6 +1,25 @@
 .avatar{
-	width : 100px;
-	height: 100px;
+	width : 150px;
+	height: 150px;
 	border-radius: 50%;
+	box-shadow: 3px 3px 7px grey;
+	margin:10px;
+}
 
+
+.list-inline{
+	list-style: none;
+	padding-left:0px;
+	text-align: center;
+}
+.list-inline li{
+	display: inline;
+	padding:10px;
+}
+.list-inline li{
+	filter:rgba(250,0,0,0.1);
+}
+.list-inline li:hover{
+	width: 150+10%;
+	filter:rgba(250,0,0,0.9);
 }

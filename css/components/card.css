@@ -1,11 +1,12 @@
 .cards {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 
 .card{
-	background: green;
+	background: white;
 	padding: 10px;
 	display: flex;
 	align-items: center;

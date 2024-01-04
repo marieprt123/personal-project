@@ -14,11 +14,14 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   margin: 0px;
+  background-color:rgb(252, 224, 155, 0.2);
 }
+
 h1, h2, h3 {
   font-family: 'Lora', serif;
   font-weight: bold;
 }
+
 a {
   text-decoration: none;
 }
