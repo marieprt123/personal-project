@@ -1,25 +1,51 @@
+.artistes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .avatar{
 	width : 150px;
 	height: 150px;
 	border-radius: 50%;
 	box-shadow: 3px 3px 7px grey;
-	margin:10px;
 }
 
+.picture-container {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin:20px;
+}
+.picture-container:hover .picture {
+    transform: rotateY(180deg);
+}
+.picture {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+   
 
-.list-inline{
-	list-style: none;
-	padding-left:0px;
-	text-align: center;
 }
-.list-inline li{
-	display: inline;
-	padding:10px;
+.picture-front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
 }
-.list-inline li{
-	filter:rgba(250,0,0,0.1);
+.picture-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: lightgrey;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
 }
-.list-inline li:hover{
-	width: 150+10%;
-	filter:rgba(250,0,0,0.9);
+
+.picture-back p{
+    text-align: center ;
+    margin: 60px auto;
 }
